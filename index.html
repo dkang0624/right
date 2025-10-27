@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>[JEJU]Allright Travel</title>
+  <style>
+    body {
+      font-family: "Noto Sans KR", system-ui, sans-serif;
+  background: #fafafa;
+  color: #111;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* 가로 중앙 정렬 */
+  justify-content: center;   /* 세로 중앙 정렬 */
+  min-height: 100vh;         /* 화면 전체 높이 확보 */
+  text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      max-width: 400px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      padding: 20px 20px;
+      margin-bottom: 16px;
+      border-radius: 12px;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 16px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn svg {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      fill: currentColor;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* 각각 브랜드 색상 */
+    .instagram { background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5); }
+    .facebook { background: #1877F2; }
+    .whatsapp { background: #25D366; }
+
+    .logo {
+  width: 400px;           /* 로고 크기 */
+  margin-bottom: 20px;    /* 제목과 간격 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  </style>
+</head>
+<body>
+    <!-- 로고 -->
+  <img src="allright travel logo.png" alt="All Right Travel Logo" class="logo">
+  <p>Pack Light, Travel Bright, Start Your Flight!<br>
+  DM us below!</p>
+
+  <!-- Instagram -->
+  <a class="btn instagram" id="igBtn" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM18 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+    Instagram DM
+  </a>
+
+  <!-- Facebook -->
+  <a class="btn facebook" id="fbBtn" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24">
+      <path d="M22.68 0H1.32A1.32 1.32 0 0 0 0 1.32v21.36A1.32 1.32 0 0 0 1.32 24H12.8v-9.28H9.7v-3.63h3.1V8.41c0-3.07 1.87-4.74 4.6-4.74 1.31 0 2.44.1 2.77.14v3.2h-1.9c-1.49 0-1.78.71-1.78 1.74v2.28h3.56l-.46 3.63h-3.1V24h6.07A1.32 1.32 0 0 0 24 22.68V1.32A1.32 1.32 0 0 0 22.68 0z"/>
+    </svg>
+    Facebook
+  </a>
+
+  <!-- WhatsApp -->
+  <a class="btn whatsapp" id="waBtn" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.94 11.94 0 0 0 12.06 0C5.53 0 .26 5.27.26 11.79c0 2.08.55 4.09 1.6 5.88L0 24l6.51-1.7a11.76 11.76 0 0 0 5.55 1.41h.01c6.53 0 11.8-5.27 11.8-11.8 0-3.15-1.23-6.12-3.35-8.33zM12.07 21.1h-.01a9.29 9.29 0 0 1-4.74-1.3l-.34-.2-3.86 1 1.03-3.76-.22-.39a9.29 9.29 0 1 1 8.14 4.65zm5.34-6.95c-.29-.15-1.7-.84-1.96-.93-.26-.1-.45-.15-.64.15-.19.29-.74.92-.9 1.11-.17.19-.33.22-.62.08-.29-.15-1.2-.44-2.28-1.4-.84-.75-1.41-1.68-1.57-1.97-.16-.29-.02-.45.12-.61.13-.13.29-.33.44-.5.15-.17.19-.29.29-.48.1-.19.06-.36-.03-.5-.08-.15-.64-1.54-.88-2.1-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.44 0 1.44 1.03 2.84 1.17 3.03.15.19 2.02 3.08 4.89 4.33.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.12.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.25.17-1.36-.07-.11-.26-.18-.55-.33z"/></svg>
+    WhatsApp
+  </a>
+
+  <script>
+    // ===== 여기에 본인 계정 정보만 수정 =====
+    const IG_USERNAME = "allright_check_jeju";      // 예: olbareun_travel
+    const FB_PAGE_URL = "https://www.facebook.com/profile.php?id=61569586632719";
+    const WA_NUMBER   = "821055319148";             // 국제번호 (0 없이)
+
+    const defaultMsg = "Hi there.";
+
+    document.getElementById("igBtn").href = `https://ig.me/m/${IG_USERNAME}`;
+    document.getElementById("fbBtn").href = FB_PAGE_URL;  // ✅ 페이스북 페이지 직접 링크
+    document.getElementById("waBtn").href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(defaultMsg)}`;
+  </script>
+</body>
+</html>
