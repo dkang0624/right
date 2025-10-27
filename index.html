@@ -98,15 +98,16 @@
 
   <script>
     // ===== 여기에 본인 계정 정보만 수정 =====
-    const IG_USERNAME = "allright_check_jeju";      // 예: olbareun_travel
+    const IG_PAGE_URL = "https://www.instagram.com/allright_check_jeju/?next=%2Fallright_travel%2F"; // ← 인스타그램 페이지 주소
     const FB_PAGE_URL = "https://www.facebook.com/profile.php?id=61569586632719";
     const WA_NUMBER   = "821055319148";             // 국제번호 (0 없이)
 
     const defaultMsg = "Hi there.";
 
-    document.getElementById("igBtn").href = `https://ig.me/m/${IG_USERNAME}`;
+    document.getElementById("igBtn").href = IG_PAGE_URL;  // ✅ 인스타그램 페이지로 이동
     document.getElementById("fbBtn").href = FB_PAGE_URL;  // ✅ 페이스북 페이지 직접 링크
     document.getElementById("waBtn").href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(defaultMsg)}`;
   </script>
 </body>
 </html>
+
